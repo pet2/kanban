@@ -23,7 +23,7 @@ body{
     padding-top: 60px;
 }
 .status:nth-child(even){
-    background-color: wheat;
+    background-color: white;
 }
 
 .status h1 {
@@ -42,13 +42,35 @@ body{
     outline: none;
     width: 100%;
     font-size: 12px;
-    margin: 5px 0;
+    margin: 1px 0;
     border-radius: 6px;
     cursor: pointer;
 
 }
 #add_btn:hover{
     background-color:aqua;
+}
+
+.todo {
+    position: relative;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: rgba(15, 15, 15, 0) 0px 0px 0px 1px,
+        rgba(15, 15, 15, 0.1) 0px 2px 4px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.todo .close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 13px;
+    color: blue;
+    cursor: pointer;
+}
+.todo .close:hover{
+    color: azure;
 }
 
 
